@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Gaming Shorts Studio Pro — Turn Gameplay into Viral Shorts</title>
+  <link rel="icon" href="app_icon.ico">
+  <style>
+    :root {
+      --bg: #0b0d13;
+      --card: #131722;
+      --input: #1a2030;
+      --border: #262f45;
+      --purple: #7c3aed;
+      --purple-hover: #6d28d9;
+      --cyan: #06b6d4;
+      --green: #22c55e;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    body { background: var(--bg); color: var(--text); line-height: 1.6; }
+    a { color: var(--cyan); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+    
+    /* Header */
+    header { padding: 20px 0; border-bottom: 1px solid var(--border); position: sticky; top: 0; background: rgba(11, 13, 19, 0.95); backdrop-filter: blur(8px); z-index: 100; }
+    .nav { display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-size: 1.25rem; font-weight: 800; color: #fff; display: flex; align-items: center; gap: 8px; }
+    .logo span { color: var(--cyan); }
+    .nav-links { display: flex; gap: 20px; align-items: center; }
+    .btn { display: inline-block; padding: 10px 22px; border-radius: 8px; font-weight: 700; cursor: pointer; border: none; text-decoration: none !important; transition: 0.2s; }
+    .btn-primary { background: var(--purple); color: #fff; }
+    .btn-primary:hover { background: var(--purple-hover); }
+    .btn-secondary { background: var(--card); border: 1px solid var(--border); color: #fff; }
+    .btn-secondary:hover { background: var(--input); }
+
+    /* Hero */
+    .hero { padding: 80px 0 60px; text-align: center; }
+    .badge { display: inline-block; padding: 6px 14px; background: rgba(6, 182, 212, 0.1); border: 1px solid var(--cyan); border-radius: 50px; color: var(--cyan); font-size: 0.85rem; font-weight: 700; margin-bottom: 20px; }
+    .hero h1 { font-size: 3rem; font-weight: 900; line-height: 1.2; margin-bottom: 20px; max-width: 850px; margin-left: auto; margin-right: auto; }
+    .hero h1 span { background: linear-gradient(135deg, #06b6d4, #7c3aed); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .hero p { font-size: 1.2rem; color: var(--muted); max-width: 650px; margin: 0 auto 30px; }
+    .hero-cta { display: flex; justify-content: center; gap: 15px; margin-bottom: 40px; flex-wrap: wrap; }
+
+    /* Features Grid */
+    .features { padding: 60px 0; }
+    .section-title { text-align: center; font-size: 2rem; font-weight: 800; margin-bottom: 40px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 28px; }
+    .card h3 { font-size: 1.25rem; margin-bottom: 12px; color: #fff; }
+    .card p { color: var(--muted); font-size: 0.95rem; }
+
+    /* Pricing */
+    .pricing { padding: 60px 0; }
+    .pricing-wrap { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; }
+    .pricing-card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 36px 30px; width: 100%; max-width: 380px; position: relative; }
+    .pricing-card.featured { border-color: var(--purple); box-shadow: 0 0 30px rgba(124, 58, 237, 0.25); }
+    .pricing-header { margin-bottom: 24px; }
+    .plan-name { font-size: 1.2rem; font-weight: 800; }
+    .plan-price { font-size: 2.75rem; font-weight: 900; color: #fff; margin: 12px 0 6px; }
+    .plan-price span { font-size: 1rem; color: var(--muted); font-weight: 500; }
+    .pricing-features { list-style: none; margin-bottom: 30px; }
+    .pricing-features li { padding: 8px 0; color: #cbd5e1; font-size: 0.95rem; display: flex; align-items: center; gap: 10px; }
+    .no-refund-note { font-size: 0.75rem; color: #fca5a5; text-align: center; margin-top: 12px; font-weight: 600; }
+
+    /* Footer */
+    footer { border-top: 1px solid var(--border); padding: 40px 0; text-align: center; color: var(--muted); font-size: 0.85rem; }
+    .footer-links { display: flex; justify-content: center; gap: 20px; margin-bottom: 16px; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container nav">
+      <div class="logo">⚡ AI GAMING SHORTS <span>STUDIO</span></div>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#download" class="btn btn-primary">Download Free</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="badge">🔥 100% LOCAL GPU PROCESSING • ZERO CLOUD LAG</div>
+      <h1>Turn Raw Gameplay into <span>Viral Shorts & Climax Videos</span> Automatically</h1>
+      <p>Multi-game teamfight detection, real endgame victory builder, trending music mixer, and vertical safe-zone layout engine.</p>
+      <div class="hero-cta" id="download">
+        <a href="https://github.com/Azhizh420/ai-shorts-sub-server/releases/latest" class="btn btn-primary" style="font-size:1.1rem; padding: 14px 32px;">⚡ Download for Windows (Free Trial)</a>
+      </div>
+      <p style="font-size:0.85rem; color:var(--muted);">System Requirements: Windows 10/11 (64-bit) • NVIDIA / AMD / Intel GPU supported</p>
+    </section>
+
+    <section class="features container" id="features">
+      <h2 class="section-title">Built Specifically for Gamers & Creators</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>🧠 Multi-Game Action Brain</h3>
+          <p>Scans audio energy bursts and screen action to pick teamfights, clutches, and solo plays while skipping idle laning.</p>
+        </div>
+        <div class="card">
+          <h3>🏆 Endgame Climax & Victory Lock</h3>
+          <p>Never misses the finale. Pins the final team push, tower rush, and Victory/Defeat screen together into a complete highlight.</p>
+        </div>
+        <div class="card">
+          <h3>📱 9:16 Viral Layout Engine</h3>
+          <p>Blur Background, Semi-Zoom, Floating Facecam PiP, and Neon Frame with 14 Mbps high-definition local rendering.</p>
+        </div>
+        <div class="card">
+          <h3>🎵 Background Music & Audius Trends</h3>
+          <p>Add trending royalty-free electronic and phonk music with automatic volume ducking and game audio preservation.</p>
+        </div>
+        <div class="card">
+          <h3>✍️ Custom Text, Emojis & Branding</h3>
+          <p>Burn viral hooks, custom channel handles, full-color emojis, and centered channel logos with fine opacity control.</p>
+        </div>
+        <div class="card">
+          <h3>🔒 Privacy First & 100% Local</h3>
+          <p>Your video recordings never leave your PC. All video rendering runs locally on your own hardware.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing container" id="pricing">
+      <h2 class="section-title">Simple, Transparent Pricing</h2>
+      <div class="pricing-wrap">
+        
+        <!-- Free Plan -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <div class="plan-name">Free Trial</div>
+            <div class="plan-price">$0 <span>/ day</span></div>
+            <p style="color:var(--muted); font-size:0.9rem;">Test everything on your PC before subscribing.</p>
+          </div>
+          <ul class="pricing-features">
+            <li>✅ 1 AI Short export per day (#1 Best Clip)</li>
+            <li>✅ 1 Background Music mix per day</li>
+            <li>✅ Full-color emojis & logo overlays</li>
+            <li>✅ Local 14 Mbps Ultra HD GPU render</li>
+            <li>✅ Safe for Windows 10 & 11 (64-bit)</li>
+          </ul>
+          <a href="#download" class="btn btn-secondary" style="width:100%; text-align:center;">Download Free</a>
+        </div>
+
+        <!-- Pro Monthly Subscription -->
+        <div class="pricing-card featured">
+          <div class="pricing-header">
+            <span class="badge" style="margin-bottom:10px;">MONTHLY ACCESS</span>
+            <div class="plan-name">Pro Monthly</div>
+            <!-- Set to $1 or $1.99 -->
+            <div class="plan-price">$1.99 <span>/ month</span></div>
+            <a href="#" id="buy-pro-btn" class="btn btn-primary" style="width:100%; text-align:center;">Subscribe for $1.99 / Month</a>
+            <p style="color:var(--muted); font-size:0.9rem;">Full access for creators, billed every 30 days.</p>
+          </div>
+          <ul class="pricing-features">
+            <li>✅ <strong>Unlimited</strong> AI Shorts every day</li>
+            <li>✅ <strong>All</strong> teamfight clips & Endgame Climax exports</li>
+            <li>✅ <strong>Unlimited</strong> Background Music + batch folder processing</li>
+            <li>✅ Hardware bound (up to 2 PCs supported)</li>
+            <li>✅ Automatic monthly renewal (cancel anytime)</li>
+          </ul>
+          <a href="#" id="buy-pro-btn" class="btn btn-primary" style="width:100%; text-align:center;">Subscribe Monthly</a>
+          <p class="no-refund-note">⚠️ STRICT NO-REFUND POLICY: All sales are final. Please evaluate the Free Trial before subscribing. See our <a href="refund.html" style="color:#fca5a5; text-decoration:underline;">Refund Policy</a>.</p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="terms.html">Terms of Service</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="refund.html">Refund Policy</a>
+        <a href="mailto:support@aigamingshorts.com">Contact Support</a>
+      </div>
+      <p>&copy; 2026 AI Gaming Shorts Studio. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
